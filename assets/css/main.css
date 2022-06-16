@@ -1,0 +1,191 @@
+/* FONTE DO SITE */
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* SCROLLBAR */
+
+/* largura */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* fundo */
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+/* scrollbar */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+
+}
+
+/* scrollbar hover*/
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+}
+
+
+/* CORPO DO SITE */
+
+body {
+    font-family: "Inter";
+    background: #1F1F23;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.divisor {
+    display: inline-block;
+    border-left: 1px solid #f5f5f5;
+    margin: 13px 10px 10px;
+    height: 1rem;
+}
+
+i {
+    display: inline-block;
+    color: rgb(196, 45, 255);
+    margin: 0 0.5em;
+}
+
+i:hover {
+    color: white;
+}
+
+.logo {
+    filter: invert(25%) sepia(71%) saturate(4545%) hue-rotate(273deg) brightness(106%) contrast(101%);
+}
+
+.logo:hover {
+    filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(108%) contrast(100%);
+}
+
+.navbar {
+    background-color: #18181B;
+    -webkit-box-shadow: 0px 3px 0px 0px rgb(241, 241, 241);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(241, 241, 241);
+    box-shadow: 0px 3px 0px 0px rgba(241, 241, 241);
+
+}
+
+
+.navbar-nav .nav-link {
+    color: rgb(241, 241, 241);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+/* DECORAÇÃO DO LINK */
+
+.link-decoracao {
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    position: relative;
+}
+
+.link-decoracao::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(196, 45, 255);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .50s ease;
+}
+
+.link-decoracao:hover::after {
+    transform: scaleX(1);
+}
+
+.link-ativo::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(196, 45, 255);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(1);
+}
+
+/* SECTION */
+
+section {
+    margin-top: 7rem;
+    margin-bottom: -3.4rem;
+    padding: 1rem;
+    background-color: #fff;
+}
